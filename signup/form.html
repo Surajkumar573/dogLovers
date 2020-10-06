@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sign up</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<div class="content">
+
+<form class="form-outline">
+	<h1 style="margin-left:10px;">Registration Form</h1>
+		<h3 style="margin-left:10px;">Please fill this form to create an account</h3>
+                <table >
+                    <tbody><tr>
+                        <td><label for="reg-fname"> First Name: </label></td>
+                        <td><input type="text" name="fname" required=""></td>
+                      
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="reg-lname"> Last Name: </label></td>
+                        <td><input type="text" name="lname" required=""></td>
+                    </tr>
+                    
+                    <tr>
+                    	<td><label>DOB:</label></td>
+                    	<td><input type="date" name="dob" required=""></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="reg-flat"> Address</label></td>
+                       <!-- <td><input type="text" required=""></td> -->
+                       <td colspan="2">
+                            <table>
+                                <tbody><tr>
+                                    <td><label for="reg-flat">House No:</label></td>
+                                    <td><input type="text" name="house" required=""></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="reg-locality"> Locality: </label></td>
+                                    <td><input type="text" name="locality" required=""></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="reg-city"> City: </label></td>
+                                    <td><input type="text" name="city" required=""></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="reg-pincode"> Pincode: </label></td>
+                                    <td><input type="number" name="pincode" required=""></td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                    	<td><label>Gender:</label></td>
+                    	<td>
+                    		<input type="radio" name="perm" value="yes" checked="">Male
+                            <input type="radio" name="perm" value="yo">Female
+                            <input type="radio" name="perm" value="yo">Others
+                    	</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="reg-email"> Email: </label></td>
+                        <td><input type="email" name="email"  placeholder="abc@gmail.com" required=""></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="reg-pass"> Password: </label></td>
+                        <td><input type="password" name="pass"  required=""></td>
+                    </tr>
+                     <tr>
+                        <td><label for="reg-pass"> Confirm Password: </label></td>
+                        <td><input type="password" name="pass" required=""></td>
+                    </tr>
+                    
+                </tbody></table>
+                
+                <label style="margin-left: 30px;"><input type="checkbox"> Remember me</label>
+                <br>
+                <h6><button onclick="myFunction()" type="submit" class="btn btn-lg " style="margin-left: 180px;"> Register </button></h6>
+
+            </form>
+</div>
+<script type="text/javascript">
+    function myFunction() {
+  alert("Your Form has been submitted.");
+}
+</script>
+</body>
+</html>
